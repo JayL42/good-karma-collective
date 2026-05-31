@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (when we add a build step)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build output
+dist/
+build/
+.cache/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Netlify
+.netlify/
+
+# Logs
+logs/
+*.log
+
+# Raw photo exports we don't want versioned (we'll add optimized versions instead)
+# Uncomment once we have optimized assets pipeline:
+# outputs/design/*.PNG
+# outputs/design/*.jpeg
