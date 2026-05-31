@@ -77,6 +77,7 @@ Full copy lives in `outputs/design/GoodKarmaCollective WebsiteBrief.md`.
 
 ## External Profiles & Links
 
+- **GitHub repo** (private): `https://github.com/JayL42/good-karma-collective`
 - **MassageBook profile**: `https://www.massagebook.com/biz/good-karma-collective` (redirects to `/therapists/good-karma-collective`)
 - **Google Business Profile**: `https://share.google/3BNZRZ391JrKIH8xJ`
 - **Google review link** (for asking happy clients to leave reviews): `https://g.page/r/CZ2MSft7QnSpEBM/review`
@@ -96,15 +97,41 @@ good-karma-collective/
 ├── CLAUDE.md               # Project-local context gate — loads frameworks, excludes Returnalyze
 ├── README.md               # This file
 ├── log.md                  # Project-local append-only log
+├── .gitignore              # macOS, editor, node, build, env, netlify
+│
+├── index.html              # ⭐ Home — hero, vision, service preview, fixed ghosted tree backdrop
+├── about.html              # About Bethany — portrait, bio, credentials
+├── massage.html            # 6 services + pricing tables
+├── coaching.html           # Coaching packages + free 20-min discovery CTA
+├── book.html               # MassageBook iframe embed + gift cert link-out
+├── styles.css              # All shared styles — tokens, header/footer, page patterns
+│
+├── assets/
+│   ├── logo-small.svg      # Horizontal lockup, transparent bg — header logo
+│   └── logo-large.svg      # Vertical lockup, transparent bg — used by ghosted backdrop on index
+│
 ├── source-artifacts/
 │   └── brief.md            # Original handoff brief — superseded by outputs/design/ brief
 └── outputs/
     ├── analyses/           # Filed analyses (brand direction eval, competitor scan, etc.)
     ├── design/             # Mockups, wireframes, color/type specs
-    │   └── GoodKarmaCollective WebsiteBrief.md  # ⭐ canonical brief — all copy + brand approved
+    │   ├── GoodKarmaCollective WebsiteBrief.md  # ⭐ canonical brief — all copy + brand approved
+    │   ├── Good Karma Logo.svg / Logo Small.svg
+    │   ├── color palate.png                     # Wellness palette reference (ChatGPT-sourced)
+    │   └── IMG_*.PNG / IMG_*.jpeg               # photos (portrait + space + storefront)
     └── specs/              # Technical specs (hosting plan, deploy pipeline, etc.)
         └── 2026-05-31-booking-integration.md    # MassageBook widget options + hybrid approach
 ```
+
+## Viewing the mockup
+
+```bash
+cd ~/Development/projects/good-karma-collective
+python3 -m http.server 8000
+# then open http://localhost:8000 in a browser
+```
+
+Or just open `index.html` directly — Google Fonts CDN works either way; some hover/sticky behaviors are easier to evaluate via the local server.
 
 ## Related
 

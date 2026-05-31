@@ -58,7 +58,7 @@ scope:
 
 ## Anticipated Tooling
 
-- **GitHub** — no MCP connector available in Anthropic's registry (verified 2026-05-31), and none needed. We use `git` + `gh` CLI from Jay's terminal. Repo initialized locally 2026-05-31 with `main` as default branch, `.gitignore` in place. Remote creation + first push: pending Jay's terminal (see project log.md for the exact commands). Will be a **private** repo at `github.com/jayl42/good-karma-collective`; Netlify pulls from there.
+- **GitHub** — no MCP connector available in Anthropic's registry (verified 2026-05-31), and none needed. We use `git` + `gh` CLI from Jay's terminal. **Private repo live at `github.com/JayL42/good-karma-collective`** (created + pushed 2026-05-31). `main` branch tracking `origin/main`. Netlify pulls from here when we wire it up.
 - **Netlify** — no MCP connector anticipated; deploys via Git push + Netlify's build hooks.
 - **MassageBook** — no connector needed. Integration approach **decided 2026-05-31**: hybrid — branded link-out "Book Now" buttons everywhere, full iframe embed on the Book Now page only. Full spec at `outputs/specs/2026-05-31-booking-integration.md` (widget URLs, snippets, mixed-content / mobile / theming gotchas). (Original handoff brief said Vagaro — corrected after Bethany confirmed MassageBook + Square reader.) MassageBook's *own* site builder doesn't allow custom code, which is exactly why we host the marketing site elsewhere (Netlify) and only consume MassageBook for booking + gift certs.
 
