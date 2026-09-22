@@ -829,3 +829,92 @@ em { font-style: italic; }
   color: var(--ink-soft);
 }
 .booking-alt a { font-weight: 500; }
+
+/* =========================================================
+   Provider selector — multi-practitioner toggle
+   Used on: about / services / coaching / book
+   Added 2026-09-20 — Beverley Raymond joins the collective.
+   ========================================================= */
+.provider-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  max-width: 560px;
+}
+.provider-btn {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.7em 1.7em;
+  border-radius: 999px;
+  border: 1px solid var(--teal-700);
+  background: transparent;
+  color: var(--teal-700);
+  cursor: pointer;
+  line-height: 1.2;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.provider-btn:hover { transform: translateY(-1px); }
+.provider-btn.is-active {
+  background: var(--teal-700);
+  color: var(--paper);
+  border-color: var(--teal-700);
+}
+.provider-btn .provider-btn-role {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin-top: 0.2rem;
+}
+.provider-btn.is-active .provider-btn-role { color: var(--gold-200); }
+
+.provider-panel { display: none; }
+.provider-panel.is-active { display: block; animation: providerFade 0.35s ease; }
+@keyframes providerFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Intro line above a provider's blocks */
+.provider-lead {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto 2.5rem;
+}
+.provider-lead-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.provider-lead h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.provider-lead p { color: var(--ink-soft); line-height: 1.65; margin-bottom: 1.6rem; }
+
+.provider-cross-link {
+  text-align: center;
+  margin-top: 2.8rem;
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
+
+/* Booking source note under an embed */
+.booking-source-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  margin-top: 1rem;
+}

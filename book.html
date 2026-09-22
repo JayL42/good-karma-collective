@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book a Session — Good Karma Collective</title>
-  <meta name="description" content="Book massage therapy online with Bethany LaBelle at Good Karma Collective. Powered by MassageBook.">
+  <meta name="description" content="Book online at Good Karma Collective — massage & health coaching with Bethany LaBelle (MassageBook), or tarot, energy healing & life coaching with Beverley Raymond (Calendly).">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="massage.html">Massage</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="coaching.html">Coaching</a></li>
           <li><a href="book.html" class="nav-cta" aria-current="page">Book&nbsp;Now</a></li>
         </ul>
@@ -38,32 +38,78 @@
         <p class="page-hero-eyebrow">Book a session</p>
         <h1 class="page-hero-title">Pick a time<br>that works for you.</h1>
         <p class="page-hero-lede">
-          Real-time availability, secure booking. Powered by MassageBook.
+          Real-time availability, secure online booking. Choose your practitioner to begin.
         </p>
       </div>
     </section>
 
     <section class="container">
-      <div class="booking-wrap">
-        <div class="booking-frame">
-          <iframe
-            src="https://www.massagebook.com/therapists/good-karma-collective/widget/services"
-            title="Book a session at Good Karma Collective"
-            loading="lazy">
-          </iframe>
-        </div>
 
-        <div class="booking-alt">
-          <p>
-            Prefer to book by phone or text?<br>
-            <a href="tel:+19788577842">978&middot;857&middot;7842</a>
-          </p>
-          <p style="margin-top: 1.5rem;">
-            Looking for a gift?
-            <a href="https://www.massagebook.com/therapists/good-karma-collective/gift-certificates?src=external" target="_blank" rel="noopener">Purchase a gift certificate &rarr;</a>
-          </p>
+      <div class="provider-toggle" role="tablist" aria-label="Choose a practitioner">
+        <button class="provider-btn is-active" data-provider="bethany" role="tab" aria-selected="true" type="button">
+          Bethany<span class="provider-btn-role">Massage &amp; Health Coaching</span>
+        </button>
+        <button class="provider-btn" data-provider="beverley" role="tab" aria-selected="false" type="button">
+          Beverley<span class="provider-btn-role">Energy, Tarot &amp; Life Coaching</span>
+        </button>
+      </div>
+
+      <!-- ===== Bethany — MassageBook ===== -->
+      <div class="provider-panel is-active" data-provider="bethany" role="tabpanel">
+        <div class="booking-wrap">
+          <div class="booking-frame">
+            <iframe
+              src="https://www.massagebook.com/therapists/good-karma-collective/widget/services"
+              title="Book a session with Bethany at Good Karma Collective"
+              loading="lazy">
+            </iframe>
+          </div>
+          <p class="booking-source-note">Scheduling for massage &amp; health coaching, powered by MassageBook.</p>
+
+          <div class="booking-alt">
+            <p>
+              Prefer to book by phone or text?<br>
+              <a href="tel:+19788577842">978&middot;857&middot;7842</a>
+            </p>
+            <p style="margin-top: 1.5rem;">
+              Looking for a gift?
+              <a href="https://www.massagebook.com/therapists/good-karma-collective/gift-certificates?src=external" target="_blank" rel="noopener">Purchase a gift certificate &rarr;</a>
+            </p>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--ink-faint);">
+              A credit card is required to book &mdash; not charged unless used for payment or the
+              cancellation policy isn&rsquo;t followed. Payments accepted: credit card, cash, check,
+              Venmo, and gift certificate.
+            </p>
+          </div>
         </div>
       </div>
+
+      <!-- ===== Beverley — Calendly ===== -->
+      <div class="provider-panel" data-provider="beverley" role="tabpanel" hidden>
+        <div class="booking-wrap">
+          <div class="provider-lead">
+            <p class="provider-lead-eyebrow">Book with Beverley</p>
+            <p>
+              Tarot, Reiki energy healing, life coaching, and meditation with Beverley Raymond of
+              Hummingbird Energy Healing. Choose a time below.
+            </p>
+          </div>
+          <div class="booking-frame">
+            <div id="calendly-embed" class="calendly-inline-widget"
+                 data-url="https://calendly.com/hummingbirdenergyhealing"
+                 style="min-width:320px;height:1000px;"></div>
+          </div>
+          <p class="booking-source-note">Scheduling powered by Calendly.</p>
+
+          <div class="booking-alt">
+            <p>
+              Having trouble with the scheduler?
+              <a href="https://calendly.com/hummingbirdenergyhealing" target="_blank" rel="noopener">Open Beverley&rsquo;s booking page &rarr;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <section class="closing-cta">
@@ -73,9 +119,8 @@
           24-hour cancellation policy.<br>Please arrive 10 minutes early.
         </h2>
         <p class="page-hero-lede" style="margin-bottom: 0;">
-          Credit card required to book &mdash; not charged unless used for payment or
-          the cancellation policy isn&rsquo;t followed. Payments accepted: credit card,
-          cash, check, Venmo, and gift certificate.
+          All sessions are by appointment. If anything comes up, just let us know as early as
+          you can so we can offer your time to someone else.
         </p>
       </div>
     </section>
@@ -93,6 +138,7 @@
       <div class="footer-col">
         <h4>Visit</h4>
         <p class="footer-contact">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=451+Andover+Street+Suite+155+North+Andover+MA+01845" target="_blank" rel="noopener">451 Andover Street, Suite 155<br>North Andover, MA 01845</a><br>
           <a href="tel:+19788577842">978&middot;857&middot;7842</a><br>
           <a href="mailto:BethanyLaBelle.lmt.hc@gmail.com">BethanyLaBelle.lmt.hc@gmail.com</a>
         </p>
@@ -110,9 +156,9 @@
       <div class="footer-col">
         <h4>Explore</h4>
         <ul class="footer-list">
-          <li><a href="about.html">About Bethany</a></li>
-          <li><a href="massage.html">Massage services</a></li>
-          <li><a href="coaching.html">Health coaching</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
         </ul>
       </div>
     </div>
@@ -121,6 +167,50 @@
       <p>&copy; 2026 Good Karma Collective &middot; All sessions by appointment</p>
     </div>
   </footer>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script>
+  (function () {
+    var CAL_BASE = 'https://calendly.com/hummingbirdenergyhealing';
+    // Hash may be "#beverley" or "#beverley:life-coaching-session" to target a specific session.
+    var parts = (location.hash || '').replace('#', '').split(':');
+    var prov = (parts[0] || '').toLowerCase();
+    var slug = parts[1] || '';
+    var embed = document.getElementById('calendly-embed');
+    if (embed && prov === 'beverley' && slug) {
+      embed.setAttribute('data-url', CAL_BASE + '/' + slug);
+    }
+    function ensureCal() {
+      var el = document.getElementById('calendly-embed');
+      if (!el || el.querySelector('iframe')) return;
+      if (window.Calendly && window.Calendly.initInlineWidget) {
+        window.Calendly.initInlineWidget({ url: el.getAttribute('data-url'), parentElement: el });
+      } else {
+        setTimeout(ensureCal, 200);
+      }
+    }
+    function activate(name) {
+      document.querySelectorAll('.provider-btn').forEach(function (b) {
+        var on = b.getAttribute('data-provider') === name;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      document.querySelectorAll('.provider-panel').forEach(function (p) {
+        var on = p.getAttribute('data-provider') === name;
+        p.classList.toggle('is-active', on);
+        if (on) { p.removeAttribute('hidden'); } else { p.setAttribute('hidden', ''); }
+      });
+      if (name === 'beverley') { ensureCal(); }
+    }
+    document.querySelectorAll('.provider-toggle').forEach(function (g) {
+      g.addEventListener('click', function (e) {
+        var btn = e.target.closest('.provider-btn');
+        if (btn) { activate(btn.getAttribute('data-provider')); }
+      });
+    });
+    if (prov === 'bethany' || prov === 'beverley') { activate(prov); }
+  })();
+  </script>
 
 </body>
 </html>
